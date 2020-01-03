@@ -14,33 +14,26 @@ List all props here -------
 Date: 20 Feb 2019
 */
 
-import React, { Component } from 'react'
-import { StyleSheet } from 'react-native'
-import { Container, Content } from 'native-base'
+import React from 'react';
+// import {StyleSheet} from 'react-native';
+import {Card, CardSection, Header} from './common/Card';
 
+const AddReservationScreen = () => {
+  return (
+    <Card>
+      <Header />
+      <CardSection>
+        <Form>
+          <Item>
+            <Input placeholder="Username" />
+          </Item>
+          <Item last>
+            <Input placeholder="Password" />
+          </Item>
+        </Form>
+      </CardSection>
+    </Card>
+  );
+};
 
-class AddReservation extends Component {
-    constructor(props) {
-        super(props)
-    }
-    render() {
-        return (
-            <Container>
-                <Header />
-                <Content>
-                    <Form>
-                        <Item>
-                            <Input placeholder="Username" />
-                        </Item>
-                        <Item last>
-                            <Input placeholder="Password" />
-                        </Item>
-                    </Form>
-                </Content>
-            </Container>
-        )
-    }
-}
-
-
-export default AddReservation
+export default AddReservationScreen;
