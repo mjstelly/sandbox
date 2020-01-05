@@ -16,7 +16,7 @@ Date: 20 Feb 2019
 
 import React from 'react';
 // import {StyleSheet} from 'react-native';
-import {Card, CardSection, Header} from './common/Card';
+import {Card, CardSection, Header} from '../components/common/Card';
 
 const AddReservationScreen = () => {
   return (
